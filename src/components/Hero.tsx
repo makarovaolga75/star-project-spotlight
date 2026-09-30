@@ -229,7 +229,7 @@ export function Hero() {
             <span className="text-portfolio-inverse-soft/60">×</span>
             ПРОДУКТЫ
           </span>
-          <h1 className="mt-5 text-4xl font-bold leading-[1.08] tracking-tight text-portfolio-heading sm:text-5xl lg:text-[56px]">
+          <h1 className="mt-5 text-4xl font-bold leading-[1.08] tracking-tight text-portfolio-heading sm:text-5xl lg:text-[48px]">
             Создаю AI-продукты
             <br />
             <span className="bg-gradient-to-r from-portfolio-violet via-portfolio-pink to-portfolio-amber bg-clip-text text-transparent">
