@@ -8,6 +8,7 @@ const items = [
       "Быстро собираю и запускаю MVP, чтобы вы проверили гипотезу и получили первых пользователей.",
     badge: "Скорость × Качество",
     badgeGradient: "from-portfolio-pink via-portfolio-violet to-portfolio-amber",
+    accent: "var(--portfolio-pink)",
   },
   {
     icon: Bot,
@@ -15,6 +16,7 @@ const items = [
     description: "Автоматизирую рутину и бизнес-процессы с помощью AI-агентов и интеграций.",
     badge: "Экономия времени",
     badgeGradient: "from-portfolio-blue to-portfolio-violet",
+    accent: "var(--portfolio-violet)",
   },
   {
     icon: Palette,
@@ -22,6 +24,7 @@ const items = [
     description: "Создаю современные интерфейсы, которые не только красивы, но и конвертируют.",
     badge: "Дизайн × Конверсия",
     badgeGradient: "from-portfolio-violet to-portfolio-amber",
+    accent: "var(--portfolio-pink)",
   },
   {
     icon: Puzzle,
@@ -29,6 +32,7 @@ const items = [
     description: "Подключаю платёжные системы, CRM, API и любые внешние сервисы.",
     badge: "Гибкость × Масштабируемость",
     badgeGradient: "from-portfolio-pink to-portfolio-amber",
+    accent: "var(--portfolio-amber)",
   },
 ];
 
