@@ -163,28 +163,36 @@
   }
 }
 
-/* "Избранные проекты" — dark portfolio section tokens */
+/* "Избранные проекты" — dark portfolio section, Hero-reference palette */
 :root {
-  --portfolio-bg: oklch(0.14 0.014 285);
+  --portfolio-bg: oklch(0.15 0.035 290);
   --portfolio-heading: oklch(0.98 0.003 247);
-  --portfolio-muted: oklch(0.72 0.012 260);
-  --portfolio-card: oklch(0.19 0.016 285);
-  --portfolio-card-2: oklch(0.23 0.02 285);
+  --portfolio-muted: oklch(0.72 0.02 285);
+  --portfolio-card: oklch(0.19 0.025 290);
+  --portfolio-card-2: oklch(0.23 0.03 292);
   --portfolio-border: oklch(1 0 0 / 10%);
   --portfolio-tag: oklch(1 0 0 / 6%);
-  --portfolio-tag-soft: oklch(0.85 0.01 260);
-  --portfolio-blue: oklch(0.62 0.2 262);
+  --portfolio-tag-soft: oklch(0.85 0.02 285);
+  --portfolio-blue: oklch(0.6 0.2 278);
   --portfolio-violet: oklch(0.58 0.24 295);
   --portfolio-pink: oklch(0.62 0.24 350);
   --portfolio-amber: oklch(0.76 0.16 68);
   --portfolio-ink: oklch(0.2 0.03 265);
   --portfolio-ink-soft: oklch(0.5 0.03 265);
   --portfolio-inverse: oklch(0.99 0 0);
-  --portfolio-inverse-soft: oklch(0.75 0.02 265);
-  --portfolio-deep: oklch(0.13 0.02 290);
-  --portfolio-deep-2: oklch(0.16 0.03 295);
+  --portfolio-inverse-soft: oklch(0.75 0.03 285);
+  --portfolio-deep: oklch(0.13 0.035 292);
+  --portfolio-deep-2: oklch(0.16 0.04 295);
   --portfolio-preview-blue: oklch(0.92 0.04 250);
   --portfolio-preview-blue-soft: oklch(0.97 0.015 250);
+}
+
+.portfolio-glow {
+  background-color: var(--portfolio-bg);
+  background-image:
+    radial-gradient(55% 60% at 8% 108%, color-mix(in oklab, var(--portfolio-pink) 20%, transparent), transparent 70%),
+    radial-gradient(55% 60% at 92% 108%, color-mix(in oklab, var(--portfolio-violet) 24%, transparent), transparent 70%),
+    radial-gradient(45% 45% at 50% -10%, color-mix(in oklab, var(--portfolio-violet) 10%, transparent), transparent 70%);
 }
 
 .project-card {
