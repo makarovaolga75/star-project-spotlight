@@ -29,62 +29,75 @@ const projects = [
 
 function StudyFlowPreview() {
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-xl bg-gradient-to-br from-portfolio-preview-blue via-portfolio-preview-blue-soft to-white">
+    <div className="relative h-full w-full overflow-hidden rounded-xl bg-portfolio-deep">
+      <div
+        className="pointer-events-none absolute -left-8 -top-8 h-32 w-40 rounded-full opacity-40 blur-2xl"
+        style={{
+          background:
+            "radial-gradient(closest-side, color-mix(in oklab, var(--portfolio-violet) 60%, transparent), transparent)",
+        }}
+      />
       {/* mini top bar */}
-      <div className="flex items-center gap-2 px-3 pt-2.5">
-        <span className="rounded-md bg-portfolio-ink px-1.5 py-0.5 text-[7px] font-semibold text-portfolio-inverse">
+      <div className="relative flex items-center gap-2 px-3 pt-2.5">
+        <span className="rounded-md border border-portfolio-violet/50 bg-portfolio-violet/15 px-1.5 py-0.5 text-[7px] font-semibold text-white">
           SaaS
         </span>
-        <span className="text-[8px] font-bold text-portfolio-ink">StudyFlow</span>
-        <span className="ml-auto flex gap-2 text-[6px] text-portfolio-ink-soft">
+        <span className="text-[8px] font-bold text-white">StudyFlow</span>
+        <span className="ml-auto flex gap-2 text-[6px] text-portfolio-inverse-soft">
           <span>Главная</span>
           <span>Возможности</span>
           <span>Цены</span>
           <span>О нас</span>
         </span>
-        <span className="rounded-md bg-portfolio-blue px-1.5 py-0.5 text-[6px] font-semibold text-portfolio-inverse">
+        <span className="rounded-md bg-gradient-to-r from-portfolio-violet to-portfolio-pink px-1.5 py-0.5 text-[6px] font-semibold text-white">
           Войти
         </span>
       </div>
-      <div className="flex items-start gap-3 px-3 pt-2.5">
+      <div className="relative flex items-start gap-3 px-3 pt-2.5">
         <div className="flex-1">
-          <p className="text-[11px] font-bold leading-tight text-portfolio-ink">
+          <p className="text-[11px] font-bold leading-tight text-white">
             Умное обучение
             <br />
             для каждого
           </p>
-          <p className="mt-1 text-[6px] leading-snug text-portfolio-ink-soft">
+          <p className="mt-1 text-[6px] leading-snug text-portfolio-inverse-soft">
             Персонализированные курсы с AI-адаптацией
             <br />
             под ваш прогресс
           </p>
-          <span className="mt-2 inline-block rounded-md bg-portfolio-blue px-2 py-1 text-[6px] font-semibold text-portfolio-inverse">
+          <span className="mt-2 inline-block rounded-md bg-gradient-to-r from-portfolio-violet to-portfolio-pink px-2 py-1 text-[6px] font-semibold text-white">
             Начать обучение
           </span>
-          <p className="mt-1.5 text-[6px] font-medium text-portfolio-ink">
+          <p className="mt-1.5 text-[6px] font-medium text-portfolio-inverse-soft">
             Подробнее →
           </p>
         </div>
         {/* progress card */}
-        <div className="w-[46%] shrink-0 rounded-lg bg-white p-2 shadow-sm">
+        <div className="w-[46%] shrink-0 rounded-lg border border-white/10 bg-portfolio-card-2 p-2">
           <div className="flex items-center gap-1">
-            <span className="text-[6px] font-semibold text-portfolio-ink">
+            <span className="text-[6px] font-semibold text-white">
               Ваш прогресс
             </span>
-            <span className="ml-auto h-1 w-1 rounded-full bg-portfolio-blue/40" />
+            <span className="ml-auto h-1 w-1 rounded-full bg-portfolio-violet/60" />
           </div>
           <div className="mt-1 flex items-center gap-1.5">
-            <span className="grid h-3.5 w-3.5 place-items-center rounded-md bg-portfolio-blue/10 text-[6px]">
+            <span className="grid h-3.5 w-3.5 place-items-center rounded-md bg-portfolio-violet/15 text-[6px]">
               ▤
             </span>
-            <span className="text-[5px] text-portfolio-ink-soft">Успеваемость</span>
+            <span className="text-[5px] text-portfolio-inverse-soft">Успеваемость</span>
           </div>
-          <p className="mt-0.5 text-[13px] font-bold text-portfolio-ink">76%</p>
+          <p className="mt-0.5 text-[13px] font-bold text-white">76%</p>
           <svg viewBox="0 0 100 28" className="mt-0.5 h-6 w-full">
+            <defs>
+              <linearGradient id="studyflow-line" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="var(--portfolio-violet)" />
+                <stop offset="100%" stopColor="var(--portfolio-pink)" />
+              </linearGradient>
+            </defs>
             <path
               d="M2 24 C 20 22, 30 18, 42 16 S 70 10, 84 8 L 98 4"
               fill="none"
-              stroke="var(--portfolio-blue)"
+              stroke="url(#studyflow-line)"
               strokeWidth="2"
               strokeLinecap="round"
             />
@@ -96,8 +109,8 @@ function StudyFlowPreview() {
               ["28", "Сертифик."],
             ].map(([v, l]) => (
               <div key={l} className="text-center">
-                <p className="text-[7px] font-bold text-portfolio-ink">{v}</p>
-                <p className="text-[4.5px] text-portfolio-ink-soft">{l}</p>
+                <p className="text-[7px] font-bold text-white">{v}</p>
+                <p className="text-[4.5px] text-portfolio-inverse-soft">{l}</p>
               </div>
             ))}
           </div>
@@ -166,7 +179,7 @@ function NeuroAnalystPreview() {
           Превращаем сырые данные
           <br />в понятные инсайты
         </p>
-        <span className="mt-2 inline-block rounded-md bg-portfolio-violet px-2 py-1 text-[6px] font-semibold text-white">
+        <span className="mt-2 inline-block rounded-md bg-gradient-to-r from-portfolio-violet to-portfolio-pink px-2 py-1 text-[6px] font-semibold text-white">
           Открыть дашборд
         </span>
       </div>
@@ -195,7 +208,7 @@ function LaunchProPreview() {
           <span>Преимущества</span>
           <span>Тарифы</span>
         </span>
-        <span className="rounded-md bg-portfolio-violet px-1.5 py-0.5 text-[6px] font-semibold text-white">
+        <span className="rounded-md bg-gradient-to-r from-portfolio-violet to-portfolio-pink px-1.5 py-0.5 text-[6px] font-semibold text-white">
           Начать бесплатно
         </span>
       </div>
@@ -212,7 +225,7 @@ function LaunchProPreview() {
             уровнем конверсии и продуманной структурой.
           </p>
           <div className="mt-2 flex items-center gap-1.5">
-            <span className="inline-block rounded-md bg-portfolio-violet px-2 py-1 text-[6px] font-semibold text-white">
+            <span className="inline-block rounded-md bg-gradient-to-r from-portfolio-violet to-portfolio-pink px-2 py-1 text-[6px] font-semibold text-white">
               Запустить сейчас
             </span>
             <span className="text-[6px] font-medium text-portfolio-inverse-soft">
@@ -244,7 +257,7 @@ function LaunchProPreview() {
           </div>
           <div className="mt-1 grid grid-cols-2 gap-1">
             <div className="h-6 rounded-md bg-gradient-to-br from-portfolio-violet/70 to-portfolio-pink/50" />
-            <div className="h-6 rounded-md bg-gradient-to-br from-portfolio-blue/60 to-portfolio-violet/50" />
+            <div className="h-6 rounded-md bg-gradient-to-br from-portfolio-violet/60 to-portfolio-amber/40" />
           </div>
         </div>
       </div>
@@ -254,12 +267,12 @@ function LaunchProPreview() {
 
 export function FeaturedProjects() {
   return (
-    <section className="bg-portfolio-bg px-4 py-10 sm:px-6 md:px-10 md:py-14">
+    <section className="portfolio-glow px-4 py-10 sm:px-6 md:px-10 md:py-14">
       <div className="mx-auto max-w-7xl">
         {/* header */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="flex min-w-0 items-center gap-2.5 text-xl font-bold text-portfolio-heading sm:text-2xl md:text-[28px]">
-            <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-portfolio-blue" />
+            <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-gradient-to-br from-portfolio-violet to-portfolio-pink" />
             Избранные проекты
           </h2>
           <a
