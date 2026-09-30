@@ -257,7 +257,7 @@ export function FeaturedProjects() {
     <section className="bg-portfolio-bg px-4 py-10 sm:px-6 md:px-10 md:py-14">
       <div className="mx-auto max-w-7xl">
         {/* header */}
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 sm:flex sm:justify-between">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="flex min-w-0 items-center gap-2.5 text-xl font-bold text-portfolio-heading sm:text-2xl md:text-[28px]">
             <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-portfolio-blue" />
             Избранные проекты
