@@ -195,6 +195,15 @@
     radial-gradient(45% 45% at 50% -10%, color-mix(in oklab, var(--portfolio-violet) 10%, transparent), transparent 70%);
 }
 
+.hero-glow {
+  background-color: var(--portfolio-bg);
+  background-image:
+    radial-gradient(50% 55% at 4% 96%, color-mix(in oklab, var(--portfolio-pink) 26%, transparent), transparent 72%),
+    radial-gradient(55% 60% at 96% 96%, color-mix(in oklab, var(--portfolio-amber) 26%, transparent), transparent 72%),
+    radial-gradient(60% 55% at 55% 110%, color-mix(in oklab, var(--portfolio-violet) 22%, transparent), transparent 75%),
+    radial-gradient(45% 40% at 50% -8%, color-mix(in oklab, var(--portfolio-violet) 12%, transparent), transparent 70%);
+}
+
 .project-card {
   border: 1px solid color-mix(in oklab, var(--card-accent) 32%, transparent);
   box-shadow:

@@ -1,20 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/Hero";
 import { FeaturedProjects } from "@/components/FeaturedProjects";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Избранные проекты — Портфолио вайбкодера" },
+      { title: "Алекс Нейро — создаю AI-продукты через вайбкодинг" },
       {
         name: "description",
         content:
-          "Избранные проекты специалиста по вайбкодингу: StudyFlow, НейроАналитик, LaunchPro.",
+          "Портфолио специалиста по вайбкодингу: быстро собираю MVP, лендинги и веб-приложения с помощью современных AI-инструментов.",
       },
-      { property: "og:title", content: "Избранные проекты — Портфолио вайбкодера" },
+      {
+        property: "og:title",
+        content: "Алекс Нейро — создаю AI-продукты через вайбкодинг",
+      },
       {
         property: "og:description",
         content:
-          "Избранные проекты специалиста по вайбкодингу: StudyFlow, НейроАналитик, LaunchPro.",
+          "Портфолио специалиста по вайбкодингу: быстро собираю MVP, лендинги и веб-приложения с помощью современных AI-инструментов.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -26,6 +30,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="min-h-screen bg-portfolio-bg">
+      <Hero />
       <FeaturedProjects />
     </main>
   );
