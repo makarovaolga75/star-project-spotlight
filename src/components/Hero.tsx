@@ -46,7 +46,7 @@ function Logo() {
         <span className="absolute left-[38%] top-[26%] h-[38%] w-[38%] rounded-full bg-portfolio-amber/80 blur-[3px]" />
       </div>
       <div className="leading-tight">
-        <p className="text-sm font-bold text-portfolio-heading">Алекс Нейро</p>
+        <p className="text-sm font-bold text-portfolio-heading">Ольга Вайб</p>
         <p className="text-xs text-portfolio-muted">Vibe Coding Specialist</p>
       </div>
     </div>
