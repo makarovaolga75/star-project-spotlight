@@ -15,14 +15,14 @@ export function CtaSection() {
 
           <div className="mt-8 flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row">
             <a
-              href="https://t.me/username"
+              href="https://t.me/test_bezz"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-portfolio-violet to-portfolio-pink px-7 py-3 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_color-mix(in_oklab,var(--portfolio-violet)_70%,transparent)] transition-transform hover:scale-[1.02] sm:w-auto"
             >
               <Send className="h-4 w-4" />
               Написать в Telegram
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:testbezz@gmail.com"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-3 text-sm font-medium text-portfolio-heading transition-colors hover:bg-white/10 sm:w-auto"
             >
               <Mail className="h-4 w-4" />
