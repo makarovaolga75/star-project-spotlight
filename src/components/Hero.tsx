@@ -210,12 +210,6 @@ export function Hero() {
             </a>
           ))}
         </nav>
-        <a
-          href="#"
-          className="ml-auto rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm font-medium text-portfolio-heading transition-colors hover:bg-white/10 lg:ml-0"
-        >
-          Связаться
-        </a>
       </header>
 
       {/* content */}
