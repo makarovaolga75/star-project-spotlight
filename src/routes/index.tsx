@@ -37,6 +37,7 @@ function Index() {
       <WhatIDo />
       <HowIWork />
       <FeaturedProjects />
+      <CtaSection />
     </main>
   );
 }
