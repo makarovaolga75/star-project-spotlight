@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { FeaturedProjects } from "@/components/FeaturedProjects";
 import { WhatIDo } from "@/components/WhatIDo";
 import { HowIWork } from "@/components/HowIWork";
+import { CtaSection } from "@/components/CtaSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
