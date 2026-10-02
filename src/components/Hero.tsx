@@ -231,8 +231,8 @@ export function Hero() {
             </span>
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-portfolio-muted">
-            Быстро собираю MVP, лендинги и веб-приложения с помощью современных
-            AI-инструментов
+            Создаю веб-приложения, лендинги и ТГ-боты под ваши задачи с помощью
+            современных AI-инструментов
           </p>
 
           {/* CTAs */}
