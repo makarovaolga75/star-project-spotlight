@@ -267,7 +267,7 @@ function LaunchProPreview() {
 
 export function FeaturedProjects() {
   return (
-    <section className="portfolio-glow px-4 py-10 sm:px-6 md:px-10 md:py-14">
+    <section id="projects" className="portfolio-glow px-4 py-10 sm:px-6 md:px-10 md:py-14">
       <div className="mx-auto max-w-7xl">
         {/* header */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
