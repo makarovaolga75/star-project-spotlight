@@ -245,7 +245,7 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="#projects"
+              href="#contact"
               className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-portfolio-heading transition-colors hover:bg-white/10"
             >
               Связаться
