@@ -191,20 +191,23 @@
   --portfolio-preview-blue-soft: oklch(0.97 0.015 250);
 }
 
+/* Glows sit inside each section and fade to the base color at top and bottom edges,
+   so neighbouring sections blend without visible seams. */
 .portfolio-glow {
   background-color: var(--portfolio-bg);
   background-image:
-    radial-gradient(55% 60% at 8% 108%, color-mix(in oklab, var(--portfolio-pink) 20%, transparent), transparent 70%),
-    radial-gradient(55% 60% at 92% 108%, color-mix(in oklab, var(--portfolio-violet) 24%, transparent), transparent 70%),
-    radial-gradient(45% 45% at 50% -10%, color-mix(in oklab, var(--portfolio-violet) 10%, transparent), transparent 70%);
+    radial-gradient(50% 45% at 10% 65%, color-mix(in oklab, var(--portfolio-pink) 14%, transparent), transparent 70%),
+    radial-gradient(50% 45% at 90% 55%, color-mix(in oklab, var(--portfolio-violet) 18%, transparent), transparent 70%),
+    radial-gradient(40% 35% at 50% 30%, color-mix(in oklab, var(--portfolio-violet) 8%, transparent), transparent 70%);
 }
 
 .hero-glow {
   background-color: var(--portfolio-bg);
   background-image:
-    radial-gradient(50% 55% at 4% 96%, color-mix(in oklab, var(--portfolio-pink) 26%, transparent), transparent 72%),
-    radial-gradient(55% 60% at 96% 96%, color-mix(in oklab, var(--portfolio-amber) 26%, transparent), transparent 72%),
-    radial-gradient(60% 55% at 55% 110%, color-mix(in oklab, var(--portfolio-violet) 22%, transparent), transparent 75%),
+    linear-gradient(to bottom, transparent 75%, var(--portfolio-bg) 100%),
+    radial-gradient(50% 45% at 4% 72%, color-mix(in oklab, var(--portfolio-pink) 24%, transparent), transparent 72%),
+    radial-gradient(55% 50% at 96% 72%, color-mix(in oklab, var(--portfolio-amber) 22%, transparent), transparent 72%),
+    radial-gradient(60% 45% at 55% 80%, color-mix(in oklab, var(--portfolio-violet) 20%, transparent), transparent 75%),
     radial-gradient(45% 40% at 50% -8%, color-mix(in oklab, var(--portfolio-violet) 12%, transparent), transparent 70%);
 }
 
