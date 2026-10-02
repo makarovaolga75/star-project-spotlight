@@ -246,7 +246,7 @@ export function Hero() {
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-portfolio-heading transition-colors hover:bg-white/10"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-portfolio-amber to-portfolio-pink px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_color-mix(in_oklab,var(--portfolio-amber)_70%,transparent)] transition-transform hover:scale-[1.02]"
             >
               Связаться
             </a>
