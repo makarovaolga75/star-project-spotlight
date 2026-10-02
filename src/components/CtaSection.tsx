@@ -2,7 +2,7 @@ import { Mail, Send } from "lucide-react";
 
 export function CtaSection() {
   return (
-    <section className="portfolio-glow">
+    <section id="contact" className="portfolio-glow">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-10 md:py-24">
         <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
           <h2 className="flex flex-wrap items-center justify-center gap-3 text-2xl font-bold text-portfolio-heading sm:text-3xl">
