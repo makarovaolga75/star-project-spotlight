@@ -238,7 +238,7 @@ export function Hero() {
           {/* CTAs */}
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <a
-              href="#contact"
+              href="#projects"
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-portfolio-amber to-portfolio-pink px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_color-mix(in_oklab,var(--portfolio-amber)_70%,transparent)] transition-transform hover:scale-[1.02]"
             >
               Посмотреть проекты
