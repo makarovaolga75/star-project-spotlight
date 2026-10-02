@@ -2,6 +2,14 @@ import { Bot, Palette, Puzzle, Rocket } from "lucide-react";
 
 const items = [
   {
+    icon: Bot,
+    title: "AI-автоматизация",
+    description: "Автоматизирую рутину и бизнес-процессы с помощью AI-агентов и интеграций.",
+    badge: "Экономия времени",
+    badgeGradient: "from-portfolio-blue to-portfolio-violet",
+    accent: "var(--portfolio-violet)",
+  },
+  {
     icon: Rocket,
     title: "MVP за неделю",
     description:
@@ -9,14 +17,6 @@ const items = [
     badge: "Скорость × Качество",
     badgeGradient: "from-portfolio-pink via-portfolio-violet to-portfolio-amber",
     accent: "var(--portfolio-pink)",
-  },
-  {
-    icon: Bot,
-    title: "AI-автоматизация",
-    description: "Автоматизирую рутину и бизнес-процессы с помощью AI-агентов и интеграций.",
-    badge: "Экономия времени",
-    badgeGradient: "from-portfolio-blue to-portfolio-violet",
-    accent: "var(--portfolio-violet)",
   },
   {
     icon: Palette,
